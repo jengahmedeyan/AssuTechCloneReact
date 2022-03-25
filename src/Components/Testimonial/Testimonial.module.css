@@ -1,0 +1,32 @@
+#testimonial{
+  background: #444 url(../../Assets/bg.jpg) no-repeat 0 0;
+    background-size: cover;
+    padding: 100px 0;
+    color: #fff;   
+}
+
+
+#testimonial> img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.img-rounded {
+    border-radius: 50%;
+  }
+  .imgThumbnail {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .imgCircle {
+    border-radius: 50%;
+  }

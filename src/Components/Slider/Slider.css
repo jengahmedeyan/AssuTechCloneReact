@@ -1,0 +1,25 @@
+.owl-carousel{
+    position:relative;
+    top:100px;
+    width:100%;
+}
+.owl-carousel .owl-item {
+    float: left;
+  }
+
+  .owl-carousel .owl-item {
+    float: left;
+  }
+  .owl-wrapper {
+      width:3772px;
+  }
+
+  .owl-theme{
+      width:100%;
+      display:flex;
+      justify-content: center;  
+  }      
+
+  .carousel-indicators{
+      display: none;
+  }

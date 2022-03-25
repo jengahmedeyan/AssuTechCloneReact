@@ -1,0 +1,46 @@
+
+
+   #meet-team .team-member {
+    padding: 13px;
+    background: #eee;
+    border: 2px solid #eee;
+    transition: border-color 400ms;
+    -webkit-transition: border-color 400ms;
+    position: relative;
+  }
+  #meet-team .team-member .team-img {
+    margin: -15px -15px 0 -15px;
+  }
+   #meet-team .team-member .team-info {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 10px;
+  }
+  #meet-team .team-member:hover {
+    border-color: #860500;
+  }
+   #meet-team .team-member .social-icons:hover > li > a {
+    background: #860500;
+  }
+  #meet-team .team-member .social-icons {
+    position: absolute;
+    bottom: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+  }
+  .team-member .social-icons > li {
+    display: inline-block;
+  }
+  .team-member .social-icons > li > a {
+    margin-right: 5px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    line-height: 34px;
+    text-align: center;
+    color: rgb(231, 231, 222);
+    background: #222534;
+    border-radius: 3px;
+  }

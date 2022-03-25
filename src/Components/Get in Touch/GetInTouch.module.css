@@ -1,0 +1,40 @@
+#getInTouch{
+    padding: 75px 0 25px;
+    background-image: linear-gradient(90deg,#ab322e 0,#860500 100%);
+    background-image: -moz-linear-gradient(90deg,#ab322e 0,#860500 100%);
+    background-image: -webkit-linear-gradient(90deg,#ab322e 0,#860500 100%);
+    background-image: -ms-linear-gradient(90deg,#ab322e 0,#860500 100%);
+    color: #fff;
+}
+
+.section_header .section_title{
+    font-size: 44px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 15px;
+    margin: 0 0 20px;
+}
+.section_header .section_title::after{
+content: "";
+position: absolute;
+width: 24px;
+height: 24px;
+bottom: -11px;
+left: 50%;
+margin-left: -12px;
+border: 5px solid #fff;
+border-radius: 20px;
+background: #860500;
+
+}
+.section_header .section_title::before{
+content: "";
+position: absolute;
+width: 140px;
+bottom: 0;
+left: 50%;
+margin-left: -70px;
+height: 1px;
+background: #ebebeb;
+}
