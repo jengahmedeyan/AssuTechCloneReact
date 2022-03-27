@@ -6,9 +6,13 @@ import Map from "./Map";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./Contact.css";
-import { send } from "emailjs-com";
+import {send} from "emailjs-com"
 
 function Contact() {
+
+  const [submitted, setSubmitted]= useState(false);
+  const [submitMessage, setSubmitMessage]= useState("");
+
   const [toSend, setToSend] = useState({
     from_name: "",
     message: "",
@@ -25,10 +29,16 @@ function Contact() {
     send("assutechclone", "template_knvp3p6", toSend, "ES27Cf2ymIk5f7HiW")
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
+        setSubmitMessage({
+          className:"bg-green-200",
+          text: "Thank you for Contacting"
+        })
       })
       .catch((err) => {
         console.log("FAILED...", err);
       });
+      setToSend({from_name:"",message:"",reply_to:"",subject:""});
+      setSubmitted(true);
   };
 
   return (
@@ -84,32 +94,11 @@ function Contact() {
                   </div>
                 </address>
               </div>
-
+              {submitMessage && <div className={`text-success w-full`}>
+  {submitMessage.text}</div>
+  }
               <form onSubmit={onSubmit} className="form">
-                {/* <input
-                  type="text"
-                  name="from_name"
-                  placeholder="Name"
-                  value={toSend.from_name}
-                  onChange={handleChange}
-                  className="mb-3"
-                />
-               
-                <input
-                  type="text"
-                  name="reply_to"
-                  placeholder="Email"
-                  value={toSend.reply_to}
-                  onChange={handleChange}
-                />
-                <input
-                 type="text"
-                 name="subject"
-                 placeholder="subject"
-                 value={toSend.subject}
-                 onChange={handleChange}
-                /> */}
-
+              
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                   <Form.Control
                     type="text"
@@ -148,11 +137,12 @@ function Contact() {
                   onChange={handleChange}
                   />
                 </Form.Group>
-                <Button variant="primary" type="submit">
-                  Send Message
+                <Button  type="submit">
+                  {submitted? "Submited":"Send Message"}
                 </Button>
                
               </form>
+              
             </div>
           </Col>
         </Row>
