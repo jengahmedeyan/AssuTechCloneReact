@@ -1,20 +1,23 @@
 /* portfolio setion styles */
-.nav-item > button{
+
+.nav-item{
+
+    color:#64686d;
     display: block;
     padding: 7px 15px;
-    background: #e5e5e5;
-    color: #64686d;
     position: relative;
-  }
+    border-radius: 3px;
+}
+
   
-  .nav-item > button:hover,
-  .nav-item button .active{
+  .nav-item:hover,
+  .nav-item .active{
     background: #860500;
     color: #fff;
     box-shadow: 0 -3px 0 0 #ab322e inset;
     -webkit-box-shadow: 0 -3px 0 0 #ab322e inset;
   }
-  .nav-item >button.active:after{
+  .nav-item >.active:after{
     content: " ";
     position: absolute;
     bottom: -17px;
@@ -24,4 +27,14 @@
     border-style: solid;
     border-color: #ab322e transparent transparent transparent;
   }
+  .filter-portfolio{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+   border:none;
+    border-radius: 3px;
+  }
+ 
+  
+
   

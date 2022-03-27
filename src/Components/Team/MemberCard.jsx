@@ -25,7 +25,7 @@ const MemberCard = (props) => {
       <p>{props.p2}</p>
       <ul className="social-icons">
         <li>
-          <a href="https://www.facebook.com/hassanyjallow" target="_blank">
+          <a href={props.facebook} target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -39,7 +39,7 @@ const MemberCard = (props) => {
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/hyjallow" target="_blank">
+          <a href={props.twitter} target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -53,10 +53,7 @@ const MemberCard = (props) => {
           </a>
         </li>
         <li>
-          <a
-            href="https://plus.google.com/u/0/116014796144112396563/posts"
-            target="_blank"
-          >
+          <a href={props.gmail} target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -70,10 +67,7 @@ const MemberCard = (props) => {
           </a>
         </li>
         <li>
-          <a
-            href="https://www.linkedin.com/in/hassan-y-jallow-558182a9"
-            target="_blank"
-          >
+          <a href={props.linkedin} target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

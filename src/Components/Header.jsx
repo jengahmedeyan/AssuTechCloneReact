@@ -7,12 +7,12 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 const Header = () => {
   return (
-    <Container fluid="lg" className="justify-content-end">
+   
     <Navbar className="justify-content-between fixed-top" 
     collapseOnSelect expand="md"
     variant="light"
     bg="light"
-    >
+    > <Container>
     <Navbar.Brand  href="#home"><img src={logo} alt="Assutech logo" /></Navbar.Brand>
     {/* <Navbar.Brand  href="#home">Logo</Navbar.Brand> */}
 
@@ -27,9 +27,9 @@ const Header = () => {
       <Nav.Link href="#contact">Contact</Nav.Link>
     </Nav>
     </Navbar.Collapse>
-    
+    </Container> 
   </Navbar>
-  </Container>
+
   );
 };
 export default Header;

@@ -12,14 +12,15 @@ import Testimonial from './Components/Testimonial/Testimonial';
 import GetInTouch from './Components/Get in Touch/GetInTouch';
 import Contact from './Components/Contact/Contact';
 import Container from "react-bootstrap/esm/Container";
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
     <div>
    
-     <Container>
+   
      <Header />
-     </Container>
+   
      <div style={{marginTop:'10px'}}>
       
        <Slider />
@@ -42,7 +43,7 @@ function App() {
      <Testimonial />
      <GetInTouch />
      <Contact />
-   
+     <Footer />   
      
     
     </div>

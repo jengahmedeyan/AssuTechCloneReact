@@ -4,6 +4,7 @@ import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import "./Portfolio.css";
 
+
 const Portfolio = () => {
   return (
     <div id="portfolio">
@@ -21,8 +22,8 @@ const Portfolio = () => {
         <strong className="text-center">Here are some of our works.</strong>
       </p>
       </div>
-
-      <Tabs className="text-center mb-4 " defaultActiveKey="all">
+   
+      <Tabs className="text-center mb-4 filter-portfolio" defaultActiveKey="all">
         <Tab eventKey="all" title="All Works">
           <h1>All works</h1>
         </Tab>
@@ -36,6 +37,7 @@ const Portfolio = () => {
           <h1>Desktop and webapps</h1>
         </Tab>
       </Tabs>
+     
     </Container>
     </div>
   );
