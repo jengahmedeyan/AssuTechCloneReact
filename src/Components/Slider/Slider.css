@@ -1,25 +1,49 @@
-.owl-carousel{
-    position:relative;
-    top:100px;
-    width:100%;
+
+.carousel-indicators {
+  display: none;
 }
-.owl-carousel .owl-item {
-    float: left;
-  }
 
-  .owl-carousel .owl-item {
-    float: left;
-  }
-  .owl-wrapper {
-      width:3772px;
-  }
+.carousel-caption {
+  position: absolute;
+  top: 0px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+}
+.carousel-caption h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight:bolder;
+  margin-top: 20px;
+}
+.carousel-caption span {
+  color: #aa312d;
+}
+.carousel-caption p {
+  font-size: 0.9rem;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  display: inline-block;
+  margin-top: -35px;
+  height: 70px;
+  width: 70px;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 100px;
+  z-index: 5;
+}
 
-  .owl-theme{
-      width:100%;
-      display:flex;
-      justify-content: center;  
-  }      
-
-  .carousel-indicators{
-      display: none;
-  }
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: #860500;
+}
