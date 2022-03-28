@@ -2,6 +2,8 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 
 const MemberCard = (props) => {
+  const p1 = props.p1;
+
   return (
     <div
       className="wow fadeInUp team-member mb-4"
@@ -21,7 +23,7 @@ const MemberCard = (props) => {
         <h3>{props.memberName}</h3>
         <span>{props.memberName}</span>
       </div>
-      <p>{props.p1}</p>
+      <p dangerouslySetInnerHTML={{ __html: p1 }} />
       <p>{props.p2}</p>
       <ul className="social-icons">
         <li>
