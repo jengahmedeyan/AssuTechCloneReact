@@ -6,12 +6,10 @@ import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import MemberCard from "./MemberCard";
 import TeamData from "./TeamData";
-// import ReactHtmlParser from "react-html-parser";
 
 const TeamMembers = () => {
- 
   return (
-    <div id="meet-team" style={{padding:"100px 0px"}}>
+    <div id="meet-team" style={{ padding: "100px 0px" }}>
       <Container>
         <div className="section-header">
           <div className="section-title text-center">Our Team</div>
@@ -27,11 +25,9 @@ const TeamMembers = () => {
         </div>
 
         <Row>
-        
           {TeamData.map((item) => {
-            
             return (
-              <Col md={4} sm={6} className="pt-2 pb-2" >
+              <Col md={4} sm={6} className="pt-2 pb-2">
                 <MemberCard
                   memberName={item.memberName}
                   memberJobTitle={item.memberJobTitle}
@@ -43,10 +39,9 @@ const TeamMembers = () => {
                   linkedin={item.links.linkedin}
                   imgSrc={item.imgUrl}
                 />
-             </Col>
-            )
+              </Col>
+            );
           })}
-           
         </Row>
       </Container>
     </div>

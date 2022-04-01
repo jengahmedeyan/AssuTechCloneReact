@@ -1,4 +1,4 @@
-const data = [
+const data= [
   {
     id: 0,
     memberName: "Hassan Y Jallow",
