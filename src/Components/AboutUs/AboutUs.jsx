@@ -8,7 +8,7 @@ import "./AboutUs.css";
 
 const AboutUs = () => {
   return (
-    <div>
+    <div id="about">
       <Container>
         <div className="section-header">
           <h2 className="section-title text-center">About us</h2>
