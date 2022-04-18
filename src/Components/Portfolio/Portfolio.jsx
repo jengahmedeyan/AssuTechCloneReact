@@ -7,6 +7,7 @@ import ProjectCard from "./ProjectCard";
 import projectData from "./ProjectData";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
+import Nav from "react-bootstrap/esm/Nav";
 
 const Portfolio = () => {
   return (
@@ -25,47 +26,35 @@ const Portfolio = () => {
           </p>
         </div>
 
-        <Tabs
-          className="text-center mb-4 filter-portfolio"
-          defaultActiveKey="all"
-        >
-          <Tab eventKey="all" title="All Works">
-            <Container>
-              <Row sm={6} className="noneSense">
-                {projectData.map((item) => {
-                  return(
-                  
-                    <ProjectCard smallImage={item.imgSrc.small} 
-                    title={item.title} description={item.description} 
-                    /> 
-  
-                  )
-                 
-                  })}
-            
-              </Row>
-            </Container>
+        <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+          <Row>
+            <Nav variant="pills" className="filter-portfolio">
+              <Nav.Item>
+                <Nav.Link eventKey="all">All works</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="website">Websites</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="mobile">mobile</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="desktop">Desktop & web apps</Nav.Link>
+              </Nav.Item>
+            </Nav>
 
-            {/* {projectData.map((item)=>{
-            return (
-      
-            <ProjectCard smallImage={item.imgSrc.small} 
-             title={item.title} description={item.description} 
-             />        
-            )
-          })         
-          } */}
-          </Tab>
-          <Tab eventKey="HOME" title="Websites">
-            <h1>Websites</h1>
-          </Tab>
-          <Tab eventKey="sdf" title="Mobile Apps">
-            <h1>Mobile apps</h1>
-          </Tab>
-          <Tab eventKey="sdfsdf" title="Desktop &amp; Web apps">
-            <h1>Desktop and webapps</h1>
-          </Tab>
-        </Tabs>
+            <Col sm={9}>
+              <Tab.Content>
+                <Tab.Pane eventKey="all">
+                  All works
+                </Tab.Pane>
+                <Tab.Pane eventKey="website">Website</Tab.Pane>
+                <Tab.Pane eventKey="mobile">mobile</Tab.Pane>
+                <Tab.Pane eventKey="desktop">desktop and web apps</Tab.Pane>
+              </Tab.Content>
+            </Col>
+          </Row>
+        </Tab.Container>
       </Container>
     </div>
   );

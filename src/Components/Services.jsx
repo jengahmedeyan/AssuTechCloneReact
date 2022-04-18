@@ -9,8 +9,8 @@ import Categories from './Categories';
 
 const Services = props => {
   return (
-    <div> 
-      <Container style={{padding: "100px 0px"}}  >
+    <div id="features"> 
+      <Container style={{padding: "10px 0px"}}  >
         <Row >
           <div className="section-header">
           <h3 className="text-center  section-title">what  We do</h3>

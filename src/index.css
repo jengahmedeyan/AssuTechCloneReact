@@ -3,8 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 html {
-  font-family: sans-serif;
+  font-family: 'Roboto',sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }

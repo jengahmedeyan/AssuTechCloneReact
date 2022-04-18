@@ -1,0 +1,29 @@
+.project-item{
+  margin: -15px;
+  width: 24.9%;
+  position: relative;
+}
+.project-items .project-item-inner {
+  position: relative;
+}
+.project-item-inner img{
+  max-width: 10px;
+}
+.project-item:hover .project-item-inner .project-info{
+   position: absolute;
+   background-color: rgba(0,0,0,.5);
+   padding: 0.1rem;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   color: #fff;
+
+   
+  
+}
+
+/* .img-responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
