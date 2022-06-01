@@ -3,7 +3,7 @@ const productData = [
     id: 0,
     title: "Youth Empowerment Project",
     description: "A platform for opportunities",
-    category: "web",
+    category: "mobile",
     imgSrc: {
       small: require("../../Assets/yep-small.png"),
 
@@ -22,7 +22,7 @@ const productData = [
     id: 2,
     title: "Glensol Africa",
     description: "Enviromental consultancy website",
-    category: "web",
+    category: "desktop",
     imgSrc: {
       small: require("../../Assets/glensol-small.png"),
     },
@@ -40,10 +40,31 @@ const productData = [
     id: 4,
     title: "YASD Gambia",
     description: "Environmental Activist Website",
-    category: "web",
+    category: "desktop",
     imgSrc: {
       small: require("../../Assets/yasd-small.png"),
     },
+    
+  },
+  {
+    id: 5,
+    title: "YASD Gambia",
+    description: "Environmental Activist Website",
+    category: "desktop",
+    imgSrc: {
+      small: require("../../Assets/yasd-small.png"),
+    },
+    
+  },
+  {
+    id: 6,
+    title: "YASD Gambia",
+    description: "Environmental Activist Website",
+    category: "mobile",
+    imgSrc: {
+      small: require("../../Assets/yasd-small.png"),
+    },
+    
   },
 ];
 
