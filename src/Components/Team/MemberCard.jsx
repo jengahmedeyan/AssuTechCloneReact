@@ -6,7 +6,7 @@ const MemberCard = (props) => {
 
   return (
     <div
-      className="wow fadeInUp team-member mb-4"
+      className="team-member mb-4"
       data-wow-delay="0ms"
       data-wow-duration="400ms"
       style={{ height: "100%" }}
