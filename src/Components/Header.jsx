@@ -17,7 +17,7 @@ const Header = () => {
           boxShadow: "0 0 3px 0 rgb(0,0,0/10%)",
         }}
       >
-        {" "}
+
         <Container>
           <Navbar.Brand href="#home">
             <img src={logo} alt="Assutech logo" />
