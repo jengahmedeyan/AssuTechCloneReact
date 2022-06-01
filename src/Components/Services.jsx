@@ -16,7 +16,7 @@ const Services = props => {
           <h3 className="text-center  section-title">what  We do</h3>
        
       
-      <p className="wow fadeInDown text-center">
+      <p className="fadeInDown text-center">
               Over the years, we have specialized in developing fast and secure
               software solutions that are<br />packed with great features to
               boost sales, notify and engage users and serve content to those
@@ -29,8 +29,9 @@ const Services = props => {
         <img src={desktopFeatures} alt="apple desktop with website slider on display" className="img-fluid"  />
         </Col>
         <Col sm={6}>
-
+        <Container>
         <Categories />
+        </Container>
         </Col>
       </Row>
       </Container>
