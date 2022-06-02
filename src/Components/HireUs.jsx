@@ -8,29 +8,17 @@ const HireUs = () => {
     <div id="hire-section">
       <Row>
         <div class="text-center">
-          <h2
-            class="wow fadeInUp"
-            data-wow-delay="0ms"
-            data-wow-duration="300ms"
-          >
+          <h2>
             <span>
               <strong>ASSUTECH</strong>
-            </span>{" "}
+            </span>
             IS TEAMWORK. GOALS. RESULTS.
           </h2>
-          <p
-            class="wow fadeInUp"
-            data-wow-delay="100ms"
-            data-wow-duration="300ms"
-          >
+          <p>
             We can help you build your business fast. Our dedicated team is
             committed to making things happen!
           </p>
-          <p
-            class="wow fadeInUp"
-            data-wow-delay="200ms"
-            data-wow-duration="300ms"
-          >
+          <p>
             <a href="#contact-anchor" class="btn btn-primary btn-lg">
               Hire us
             </a>
