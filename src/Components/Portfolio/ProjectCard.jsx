@@ -1,31 +1,25 @@
 import React, { useState } from "react";
 import "./ProjectCard.css";
-import Col from "react-bootstrap/esm/Col";
-
-
 
 function ProjectCard(props) {
   const [isHover, setIsHover] = useState(false);
-  return (
 
-      <div className="project-item  m-2">
-        <a href="#">
-          <div
-            className="project-item-inner"
-            onMouseEnter={() => setIsHover(true)}
-            onMouseLeave={() => setIsHover(false)}
-          >
-            <img src={props.smallImage} alt="" className="img-responsive" />
-            {isHover ? (
-              <div className="project-info">
-                <h3>{props.title}</h3>
-                <span>{props.description}</span>
-              </div>
-            ) : null}
+  return (
+    <div className="card">
+      <div
+        className="project-item-inner"
+        onMouseEnter={() => setIsHover(true)}
+        onMouseLeave={() => setIsHover(false)}
+      >
+        <img src={props.smallImage} alt="" srcset="" />
+        {isHover ? (
+          <div className="card-content">
+            <p>{props.title}</p>
+            <p>{props.description}</p>
           </div>
-        </a>
+        ) : null}
       </div>
-   
+    </div>
   );
 }
 
