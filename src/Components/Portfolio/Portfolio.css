@@ -1,69 +1,80 @@
 /* portfolio setion styles */
+.nav {
+  display: flex;
+  text-align: center;
+  justify-content: center;
 
-/* .nav-item{
-
-    color:#64686d;
-    display: block;
-    position: relative;
-    border-radius: 3px;
+  cursor: pointer;
+  margin: 0;
 }
-
-  
-  .nav-item:hover,
-  .nav-item .active{
-    background: #860500;
-    color: #fff;
-    box-shadow: 0 -3px 0 0 #ab322e inset;
-    -webkit-box-shadow: 0 -3px 0 0 #ab322e inset;
-  }
-  .nav-item >.active:after{
-    content: " ";
-    position: absolute;
-    bottom: -17px;
-    left: 50%;
-    margin-left: -10px;
-    border-width: 10px;
-    border-style: solid;
-    border-color: #ab322e transparent transparent transparent;
-  } */
-  .nav{
-   display:flex;
-   text-align: center;
-   justify-content: center;
-
-   cursor: pointer;
-   margin: 0;
-  }
-  .nav-item{
-   background: #e5e5e5;
-  }
-  .nav-item>li:first-child a {
-    border-radius: 4px 0 0 4px;
+.nav-item {
+  background: #e5e5e5;
 }
-  .nav-item>li a {
-    display: block;
-    padding: 7px 15px;
-    background: #e5e5e5;
-    color: #64686d;
-    position: relative;
-    text-decoration: none;
+.nav-item > li:first-child a {
+  border-radius: 4px 0 0 4px;
 }
-.nav-link{
+.nav-item > li a {
   display: block;
-  padding: 0.5rem 1rem;
-  color: #0d6efd;
+  padding: 7px 15px;
+  background: #e5e5e5;
+  color: #64686d;
+  position: relative;
   text-decoration: none;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
-.nav-link.active {
+#portfolio .filter-portfolio {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px;
+  display: flex;
+  
+}
+#portfolio .nav-link,
+.nav-link button {
+  display: block;
+  padding: 0.35rem 0.25rem;
+  color: #64686d;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+#portfolio .nav-link.active {
   background: #860500 !important;
   color: #fff;
   box-shadow: 0 -3px 0 0 #ab322e inset;
   -webkit-box-shadow: 0 -3px 0 0 #ab322e inset;
 }
+.nav-link button {
+  border: none;
+  background-color: transparent;
+  color: #64686d;
+}
+.nav-link button:hover,
+.active {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
 
- 
-  
+@media screen and (max-width: 596px) {
+  .tab-contents .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 170px;
+    gap: 15px;
+  }
+  .card {
+    width: 13rem;
+  }
+}
 
-
-  
+@media screen and (max-width: 496px) {
+  .tab-contents .row {
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
+  }
+  .card {
+    width: 10rem;
+  }
+}
